@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "docsplit-paperclip-processor"
 
-  s.add_dependency "paperclip", "~> 4.2"
+  s.add_dependency 'paperclip', '>= 0', '~> 4.2'
   s.add_dependency 'ruby-filemagic'
   s.add_dependency 'docsplit'
   s.add_development_dependency 'bundler', ">= 1.1.4"
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sqlite3'
 
   # Runtime dependencies
-  s.add_runtime_dependency "paperclip"
+  # s.add_runtime_dependency 'paperclip', '>= 0', '~> 4.2'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
