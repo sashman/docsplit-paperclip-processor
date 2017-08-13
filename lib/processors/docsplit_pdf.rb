@@ -12,7 +12,7 @@ module Paperclip
           Docsplit.extract_pdf(src_path, :output => dst_dir)
         end
       rescue Exception => e
-        new_exception = Paperclip::Error.new("There was an error converting #{@basename} to pdf")
+        new_exception = Paperclip::Error.new("There was an error converting #{@basename} to pdf: #{e}")
         new_exception.set_backtrace(e.backtrace)
         raise new_exception
       end
