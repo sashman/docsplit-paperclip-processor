@@ -7,7 +7,7 @@ These include the Microsoft Office formats: doc, docx, ppt, xls and so on, as we
 
 * [Paperclip][0]
 * [Docsplit][1]
-* [FileMagic][2]
+* [FileMagic][2] Ubuntu: `apt-get install libmagic-dev`
 
 ## Installation ##
 
